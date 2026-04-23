@@ -1,0 +1,381 @@
+{
+  "info": {
+    "_postman_id": "19d9ff7d-3685-46c6-a99b-6907eefd24b4",
+    "name": "Blog-App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53951301",
+    "_collection_link": "https://go.postman.co/collection/53951301-19d9ff7d-3685-46c6-a99b-6907eefd24b4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Article",
+      "item": [
+        {
+          "name": "GetAll Article",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/article/getAll",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "article",
+                "getAll"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "GetAll Article",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/article/getAll",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "article",
+                    "getAll"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "395"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 23 Apr 2026 06:30:39 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Java Springboot\",\n        \"shortDescription\": \"havign basic idea about java\",\n        \"content\": \"this course is all about java and microservices\",\n        \"paid\": false,\n        \"price\": 100,\n        \"readingMinutes\": 10\n    },\n    {\n        \"id\": 2,\n        \"title\": \"microservices Springboot\",\n        \"shortDescription\": \"havign basic idea about java\",\n        \"content\": \"this course is all about java and microservices\",\n        \"paid\": false,\n        \"price\": 500,\n        \"readingMinutes\": 100\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "getArticleBYID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/article/single-article/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "article",
+                "single-article",
+                "2"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "getArticleBYID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/article/single-article/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "article",
+                    "single-article",
+                    "1"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "191"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 23 Apr 2026 06:31:23 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 1,\n    \"title\": \"Java Springboot\",\n    \"shortDescription\": \"havign basic idea about java\",\n    \"content\": \"this course is all about java and microservices\",\n    \"paid\": false,\n    \"price\": 100,\n    \"readingMinutes\": 10\n}"
+            }
+          ]
+        },
+        {
+          "name": "CreateArticle",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"English Course\",\r\n    \"shortDescription\": \"havign basic idea about English Language\",\r\n    \"content\": \"this course is all about english  and Communication\",\r\n    \"paid\": false,\r\n    \"price\": 200.0,\r\n    \"readingMinutes\": 100\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/v1/article/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "article",
+                "create"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "CreateArticle",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": \"English Course\",\r\n    \"shortDescription\": \"havign basic idea about English Language\",\r\n    \"content\": \"this course is all about english  and Communication\",\r\n    \"paid\": false,\r\n    \"price\": 200.0,\r\n    \"readingMinutes\": 100\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/article/create",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "article",
+                    "create"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 23 Apr 2026 06:31:32 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 62,\n    \"title\": \"English Course\",\n    \"shortDescription\": \"havign basic idea about English Language\",\n    \"content\": \"this course is all about english  and Communication\",\n    \"paid\": false,\n    \"price\": 200,\n    \"readingMinutes\": 100\n}"
+            }
+          ]
+        },
+        {
+          "name": "DeleteArticleById",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/v1/article/delete-article/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "v1",
+                "article",
+                "delete-article",
+                "2"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "DeleteArticleById",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/article/delete-article/62",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "article",
+                    "delete-article",
+                    "62"
+                  ]
+                }
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 23 Apr 2026 06:31:47 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        },
+        {
+          "name": "UpdateArticle",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": [
+            {
+              "name": "UpdateArticle",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"title\": \"Hindi Course\",\r\n    \"shortDescription\": \"havign basic idea about Hindi Language\",\r\n    \"content\": \"this course is all about Hindi  and Communication\",\r\n    \"paid\": true,\r\n    \"price\": 100.0,\r\n    \"readingMinutes\": 500\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:8080/api/v1/article/update-article/30",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "api",
+                    "v1",
+                    "article",
+                    "update-article",
+                    "30"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "201"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 23 Apr 2026 06:32:00 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 30,\n    \"title\": \"Hindi Course\",\n    \"shortDescription\": \"havign basic idea about Hindi Language\",\n    \"content\": \"this course is all about Hindi  and Communication\",\n    \"paid\": true,\n    \"price\": 100,\n    \"readingMinutes\": 500\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
