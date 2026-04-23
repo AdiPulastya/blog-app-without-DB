@@ -48,11 +48,20 @@ json
 
 ### 2. Get All Articles
 http
-GET /api/v1/article
+GET /api/v1/article/getAll
 
 ### 3. Get Article by ID
 http
 GET /api/v1/article/{id}
+
+### 4. Update Article by ID
+http
+PUT /api/v1/article/update-article/{Id}
+
+### 5. Delete Article by ID
+http 
+Delete /api/v1/article/delete-article/{Id}
+
 ## ▶️ How to Run
 
 ### 1. Clone repository
