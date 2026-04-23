@@ -60,10 +60,8 @@ bash
 git clone https://github.com/your-username/blog-app.git
 cd blog-app
 ### 2. Build project
-bash
 mvn clean install
 ### 3. Run application
-bash
 mvn spring-boot:run
 ### 4. Open in browser / Postman
 text
